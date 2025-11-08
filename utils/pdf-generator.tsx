@@ -28,6 +28,12 @@ export const generatePDF = (invoice: InvoiceData) => {
   y += 6;
   doc.text(invoice.fromEmail, 20, y);
   doc.text(invoice.toEmail, 120, y);
+  y += 6;
+  doc.text(invoice.fromPhone, 20, y);
+  doc.text(invoice.toPhone, 120, y);
+  y += 6;
+  doc.text(invoice.fromAddress, 20, y);
+  doc.text(invoice.toAddress, 120, y);
   y += 20;
 
   // Items header

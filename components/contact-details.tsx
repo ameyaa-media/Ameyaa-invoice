@@ -38,9 +38,27 @@ export default function ContactDetails() {
             />
           </div>
           <div>
+            <Label htmlFor="fromPhone" className="mb-2">
+              Phone
+            </Label>
+            <Input
+              id="fromPhone"
+              value={invoice.fromPhone}
+              onChange={(e) => updateInvoice({ fromPhone: e.target.value })}
+              placeholder="Your phone number"
+              type="tel"
+            />
+          </div>
+          <div>
             <Label htmlFor="fromAddress" className="mb-2">
               Address
             </Label>
+            <Input
+              id="fromAddress"
+              value={invoice.fromAddress}
+              onChange={(e) => updateInvoice({ fromAddress: e.target.value })}
+              placeholder="Your full address"
+            />
           </div>
         </div>
         <div className="space-y-4">
@@ -69,10 +87,29 @@ export default function ContactDetails() {
             />
           </div>
           <div>
+            <Label htmlFor="toPhone" className="mb-2">
+              Phone
+            </Label>
+            <Input
+              id="toPhone"
+              value={invoice.toPhone}
+              onChange={(e) => updateInvoice({ toPhone: e.target.value })}
+              placeholder="Client's phone number"
+              type="tel"
+            />
+          </div>
+          <div>
             <Label htmlFor="toAddress" className="mb-2">
               Address
             </Label>
+            <Input
+              id="toAddress"
+              value={invoice.toAddress}
+              onChange={(e) => updateInvoice({ toAddress: e.target.value })}
+              placeholder="Client's full address"
+            />
           </div>
+          ```
         </div>
       </CardContent>
     </Card>

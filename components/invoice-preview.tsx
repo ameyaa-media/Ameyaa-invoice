@@ -63,11 +63,15 @@ export default function InvoicePreview({ onBack }: InvoicePreviewProps) {
                 <h3 className="font-semibold mb-2">From:</h3>
                 <p className="font-medium">{invoice.fromName}</p>
                 <p className="text-gray-600">{invoice.fromEmail}</p>
+                <p className="text-gray-600">{invoice.fromPhone}</p>
+                <p className="text-gray-600 mt-1">{invoice.fromAddress}</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2">To:</h3>
                 <p className="font-medium">{invoice.toName}</p>
                 <p className="text-gray-600">{invoice.toEmail}</p>
+                <p className="text-gray-600">{invoice.toPhone}</p>
+                <p className="text-gray-600 mt-1">{invoice.toAddress}</p>
               </div>
             </div>
 
